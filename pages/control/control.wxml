@@ -1,0 +1,13 @@
+<!-- control.wxml -->
+<view class="rootWrap">
+  <view>连接的设备ID---------{{ DeviceId }}</view>
+  <!-- <canvas canvas-id="firstCanvas" bindtouchstart="touchstart" bindtouchmove="touchmove"></canvas> -->
+  <view id="rocker" class="rocker" style="top:{{ rockerTop }}; left: {{ rockerLeft }};" bindtouchstart="rockerStart" bindtouchmove="rockerMove" bindtouchend="rockerEnd">{{ msg }}</view>
+  <view>与设备连接状态--------{{errMsg}}</view>
+  <view>本机蓝牙状态--------{{available}}</view>
+  <view wx:if="{{AccelerometerFlag}}">
+    重力感应模式{{AccelerometerState}}
+    <switch bindchange="switchTap"/>
+  </view>
+
+</view>

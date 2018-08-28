@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container rootWrap">
+  <view  class="logoanimation">
+    <image class="image" src="http://edu.eggtoy.com/img/mb_mini_logo.png" style="transform:{{imagePos}}"></image>
+  </view>
+  <view animation="{{animationData}}" class="slogen">欢迎来到蛋玩科技AI世界</view>
+  <view class="Btn" bindtap="toControl">let`s go</view>
+</view>
